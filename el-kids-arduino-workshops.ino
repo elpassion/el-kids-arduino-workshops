@@ -8,6 +8,8 @@
 //      - poczekja(milisekundy)
 
 procedura powtarzaj() {
-  //tu wpisz instrukcje dla robota
+  jedz_do_przodu(3000);  
+  zatrzymaj_sie();
+  poczekaj(5000);
 }
 
