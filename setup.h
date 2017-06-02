@@ -52,3 +52,24 @@ void jedz_do_przodu(int time){
   wheels.forward(DEFAULT_SPEED, time);
 }
 
+void jedz_do_tylu(int time){
+  wheels.backward(DEFAULT_SPEED, time);
+}
+
+void obrot_w_lewo(int time){
+  wheels.turn_left(DEFAULT_SPEED, time); 
+}
+
+void obrot_w_prawo(int time){
+  wheels.turn_right(DEFAULT_SPEED, time); 
+}
+
+int odlegosc(){
+  int distance = radar.ping_cm();
+  if(distance == 0){
+    return 10000;
+  }else{
+    return distance;
+  }
+}
+

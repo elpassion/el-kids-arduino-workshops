@@ -5,7 +5,7 @@
 // 1. Jak robot wykonuje swój kod (pętla powtarzaj)
 
 procedura powtarzaj() {
-  
+  dojedz_do_sciany();
 }
 
 // 2. Spróbujmy pomóc robotowi dojechać do mety.
@@ -14,8 +14,10 @@ procedura powtarzaj() {
 //      - zatrzymaj_sie()
 //      - poczekaj(milisekundy)
 
-procedura do_mety() {
-  
+procedurado_mety() {
+  jedz_do_przodu(3000);  
+  zatrzymaj_sie();
+  poczekaj(5000);
 }
 
 // 3. Czy roboty mogą tańczyć? Spróbujmy zapropogramować robota tak aby to zrobił!
@@ -27,7 +29,11 @@ procedura do_mety() {
 //      - poczekaj(milisekundy)
 
 procedura taniec(){
-  
+  obrot_w_lewo(200);
+  obrot_w_prawo(400);
+  obrot_w_lewo(200);
+  jedz_do_przodu(200);
+  jedz_do_tylu(200);
 }
 
 // 4. Czy robot coś widzi? 
@@ -42,7 +48,11 @@ procedura taniec(){
 //      - zatrzymaj_sie()
 
 procedura do_mety_i_stop(){
-  
+  jezeli(na_linii()){
+    zatrzymaj_sie();
+  }w_przeciwnym_razie{
+    jedz_do_przodu(100);
+  }
 }
 
 // 5. Czy robot ma więcej zmysłów? 
@@ -58,7 +68,12 @@ procedura do_mety_i_stop(){
 //      - zatrzymaj_sie()
 
 procedura dojedz_do_sciany(){
-    
+    jezeli(odlegosc() < 5){
+      zatrzymaj_sie();
+      poczekaj(500);
+    }w_przeciwnym_razie{
+      jedz_do_przodu(100);
+    }
 }
 
 
@@ -67,6 +82,16 @@ procedura dojedz_do_sciany(){
 // /przedtawienie pomysłu/
 
 procedura berek(){
-  
+  jezeli(na_linii()){
+    jedz_do_tylu(500);
+    obrot_w_lewo(500);
+  }w_przeciwnym_razie{
+    jezeli(odlegosc() < 50){
+      jedz_do_przodu(100);
+    }w_przeciwnym_razie{
+      obrot_w_prawo(100);
+    }
+  }
+
 }
 
