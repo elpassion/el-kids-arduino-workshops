@@ -4,19 +4,30 @@
 
 // 1. Jak robot wykonuje swój kod (pętla powtarzaj)
 
-procedura powtarzaj() {
-  
+procedura powtarzaj(){
+
 }
 
+
+
+
+
+
 // 2. Spróbujmy pomóc robotowi dojechać do mety.
-//    Funkcje które mogą się przydać:
+//    Funkcje które mogą się przydać:go
 //      - jedz_do_przodu(milisekundy)
 //      - zatrzymaj_sie()
 //      - poczekaj(milisekundy)
 
-procedura do_mety() {
+procedura do_mety() { //pamiętaj o wywołaniu w "powtarzaj"
   
 }
+
+
+
+
+
+
 
 // 3. Czy roboty mogą tańczyć? Spróbujmy zapropogramować robota tak aby to zrobił!
 //    Funkcje które mogą się przydać:
@@ -26,9 +37,15 @@ procedura do_mety() {
 //      - zatrzymaj_sie()
 //      - poczekaj(milisekundy)
 
-procedura taniec(){
+procedura taniec(){ //pamiętaj o wywołaniu w "powtarzaj"
   
 }
+
+
+
+
+
+
 
 // 4. Czy robot coś widzi? 
 //
@@ -41,9 +58,15 @@ procedura taniec(){
 //        oraz instrukcja 'jezeli' i 'w_przeciwnym_razie'
 //      - zatrzymaj_sie()
 
-procedura do_mety_i_stop(){
+procedura do_mety_i_stop(){ //pamiętaj o wywołaniu w "powtarzaj"
   
 }
+
+
+
+
+
+
 
 // 5. Czy robot ma więcej zmysłów? 
 //
@@ -57,16 +80,21 @@ procedura do_mety_i_stop(){
 //        oraz operatory < > 
 //      - zatrzymaj_sie()
 
-procedura dojedz_do_sciany(){
+procedura dojedz_do_sciany(){ //pamiętaj o wywołaniu w "powtarzaj"
     
 }
 
 
+
+
+
+
+
+
 // 6. Czy robot może bawić się z innymi robotami?
 //
-// /przedtawienie pomysłu/
+// /przedstawienie pomysłu/
 
-procedura berek(){
-  
+procedura berek(){ //pamiętaj o wywołaniu w "powtarzaj"
+
 }
-

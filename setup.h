@@ -45,7 +45,7 @@ boolean na_linii(){
 }
 
 void zatrzymaj_sie(){
-  wheels.full_stop(0);
+  wheels.full_stop(200);
 }
 
 void jedz_do_przodu(int time){
