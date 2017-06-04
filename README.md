@@ -1,5 +1,7 @@
 # EL Kids / ArduBerek
 
+Ćwiczenie dla dzieci z wykorzystaniem robotów opartych o Arduino.
+
 ## Założenia
 
 * Cele:
@@ -28,10 +30,6 @@
   
   * Wszystkie roboty mają to samo zadanie (czyli teamy mogą robić to samo, 
     niezależnie czy będą 3 teamy czy 1)
-  
-  * W głównej pętli używamy jak najwyższego poziomu (`na_linii()`), ale możemy 
-    na koniec pokazać szczegóły implementacyjne 
-    (`zczytaj_detektor_linii() == WLACZONY`)
 
 ## Ustawienie środowiska
 
@@ -41,13 +39,13 @@
    
 2. Zmień ustawienia edytora:
 
-   * Arduino -> Preferences -> Język edytora: "Język Polski (polski)"
-   * Arduino -> Preferences -> Rozmiar czcionki edytora: "16"
-   * Arduino -> Preferences -> Powiększenie interfejsu: "Automatycznie"
+   * Arduino -> Preferences -> **Język edytora: "Język Polski (polski)"**
+   * Arduino -> Preferences -> **Rozmiar czcionki edytora: "16"**
+   * Arduino -> Preferences -> **Powiększenie interfejsu: "Automatycznie"**
 
 3. Dołącz wymagane biblioteki:
 
-   * Arduino -> Szkic -> Dołącz bibliotekę -> Dodaj bibliotekę .ZIP
+   * Arduino -> Szkic -> Dołącz bibliotekę -> **Dodaj bibliotekę .ZIP**
    
      Tutaj dodajemy wszystkie 3 biblioteki z katalogu [libraries](libraries).
      Powinny się pojawić w menu Arduino -> Szkic -> Dołącz bibliotekę -> 
@@ -63,18 +61,25 @@
    
 2. Każde ćwiczenie jest opisane w głównym pliku projektu: 
    [el-kids-arduino-workshops.ino](el-kids-arduino-workshops.ino). Rozwiązania
-   są do podejrzenia w pliku [solutions.h](solutions.h)
+   są do podejrzenia w pliku [solutions.h](solutions.h).
 
 3. Mentor tłumaczy najpierw ogólnie główne elementy programu (co to jest
    procedura, jak robot wykonuje swój kod, do czego jest specjalna procedura
    `powtarzaj` itp.)
-   
-4. Przy każdym kolejnym ćwiczeniu, mentor implementuje razem z dziećmi kolejne
-   procedury (`do_mety()`, `taniec()` itd.) Tłumaczy, jakie polecenia są teraz
-   dostępne i pyta, jak je można wykorzystać, by pomóc robotowi wykonać zadanie.
+
+4. Mentor przy każdym ćwiczeniu tłumaczy jakie polecenia są teraz dostępne i 
+   pyta, jak je można wykorzystać, by pomóc robotowi wykonać zadanie.
+
+5. Przy każdym kolejnym ćwiczeniu, mentor implementuje razem z dziećmi kolejną
+   procedurę (`do_mety()`, `taniec()` itd.) - tam, gdzie jest zdefiniowana.
    
    Następnie wywołuje tę procedurę wewnątrz głównej pętli
-   (`procedura powtarzaj()`), wgrywa program do robota i uruchamia go.
+   (np. `procedura powtarzaj() { do_mety(); }`), wgrywa program do robota i 
+   uruchamia go.
+
+6. W głównej pętli używamy jak najwyższego poziomu (`na_linii()`), ale możemy 
+   na koniec pokazać szczegóły implementacyjne
+   (`zczytaj_detektor_linii() == WLACZONY`)
 
 ## Uwagi
 
