@@ -1,3 +1,4 @@
+#include <Babelduino.h>
 #include <L298N.h>
 #include <NewPing.h>
 
@@ -16,15 +17,6 @@
 #define CENTER_LINE_DETECTOR 12
 
 #define DEFAULT_SPEED 200
-
-// Language translations
-
-#define nic void
-#define powtarzaj loop
-#define jezeli if
-#define w_przeciwnym_razie else 
-#define procedura void
-#define poczekaj delay
 
 // Functions and the backstage code
 
