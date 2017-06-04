@@ -1,3 +1,6 @@
+#ifndef SETUP_H
+#define SETUP_H
+
 #include <Babelduino.h>
 #include <L298N.h>
 #include <NewPing.h>
@@ -64,4 +67,6 @@ int odlegosc(){
     return distance;
   }
 }
+
+#endif /* SETUP_H */
 

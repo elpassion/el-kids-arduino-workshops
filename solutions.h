@@ -14,8 +14,8 @@ procedura powtarzaj() {
 //      - zatrzymaj_sie()
 //      - poczekaj(milisekundy)
 
-procedurado_mety() {
-  jedz_do_przodu(3000);  
+procedura do_mety() {
+  jedz_do_przodu(3000);
   zatrzymaj_sie();
   poczekaj(5000);
 }
@@ -28,7 +28,7 @@ procedurado_mety() {
 //      - zatrzymaj_sie()
 //      - poczekaj(milisekundy)
 
-procedura taniec(){
+procedura taniec() {
   obrot_w_lewo(200);
   obrot_w_prawo(400);
   obrot_w_lewo(200);
@@ -47,10 +47,11 @@ procedura taniec(){
 //        oraz instrukcja 'jezeli' i 'w_przeciwnym_razie'
 //      - zatrzymaj_sie()
 
-procedura do_mety_i_stop(){
-  jezeli(na_linii()){
+procedura do_mety_i_stop() {
+  jezeli (na_linii()) {
     zatrzymaj_sie();
-  }w_przeciwnym_razie{
+  }
+  w_przeciwnym_razie {
     jedz_do_przodu(100);
   }
 }
@@ -67,31 +68,31 @@ procedura do_mety_i_stop(){
 //        oraz operatory < > 
 //      - zatrzymaj_sie()
 
-procedura dojedz_do_sciany(){
-    jezeli(odlegosc() < 5){
-      zatrzymaj_sie();
-      poczekaj(500);
-    }w_przeciwnym_razie{
-      jedz_do_przodu(100);
-    }
+procedura dojedz_do_sciany() {
+  jezeli (odlegosc() < 5) {
+    zatrzymaj_sie();
+    poczekaj(500);
+  }
+  w_przeciwnym_razie {
+    jedz_do_przodu(100);
+  }
 }
-
 
 // 6. Czy robot może bawić się z innymi robotami?
 //
 // /przedtawienie pomysłu/
 
-procedura berek(){
-  jezeli(na_linii()){
+procedura berek() {
+  jezeli (na_linii()) {
     jedz_do_tylu(500);
     obrot_w_lewo(500);
-  }w_przeciwnym_razie{
-    jezeli(odlegosc() < 50){
+  }
+  w_przeciwnym_razie {
+    jezeli (odlegosc() < 50) {
       jedz_do_przodu(100);
-    }w_przeciwnym_razie{
+    }
+    w_przeciwnym_razie {
       obrot_w_prawo(100);
     }
   }
-
 }
-
