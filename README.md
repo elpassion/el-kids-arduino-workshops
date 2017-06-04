@@ -1,6 +1,7 @@
 # EL Kids / ArduBerek
 
-Ćwiczenie dla dzieci z wykorzystaniem robotów opartych o Arduino.
+Ćwiczenie programistyczno-robotyczne dla dzieci z wykorzystaniem robotów 
+opartych o Arduino.
 
 ## Założenia
 
@@ -22,14 +23,10 @@
   * Dzieci wspólnie z mentorami dają robotowi coraz bardziej skomplikowane
     zadania do zrobienia
     
-  * Na koniec może nastąpić "pojedynek" kilku robotów na wspólnym ringu
-  
-* Szczegóły implementacyjne:
-
-  * Program piszemy po polsku
+  * Na koniec można zorganizować "pojedynek" kilku robotów na wspólnym ringu
   
   * Wszystkie roboty mają to samo zadanie (czyli teamy mogą robić to samo, 
-    niezależnie czy będą 3 teamy czy 1)
+    niezależnie czy będą 3 teamy czy 1)  
 
 ## Ustawienie środowiska
 
@@ -53,31 +50,44 @@
 
 ## Przebieg ćwiczenia
 
-1. Jest kilka ćwiczeń, w których sukcesywnie pojawiają się coraz trudniejsze
-   zadania do zaprogramowania ("jedź robotem", "jedź i wykrywaj linię", "jedź, 
-   wykrywaj linię i zatrzymaj się przed ścianą" itd.) Przy każdym kolejnym
-   ćwiczeniu pojawiają się też dodatkowe polecenia i struktury (`na_linii()`, 
-   `jeżeli` itd.)
-   
-2. Każde ćwiczenie jest opisane w głównym pliku projektu: 
-   [el-kids-arduino-workshops.ino](el-kids-arduino-workshops.ino). Rozwiązania
-   są do podejrzenia w pliku [solutions.h](solutions.h).
+1. Mentor pokazuje robota i trochę o nim opowiada: z jakich elementów się składa
+   i jak działają / co robią poszczególne części i sensory:
 
-3. Mentor tłumaczy najpierw ogólnie główne elementy programu (co to jest
+   * Kółka, silniczki i sterownik silników, który zajmuje się kontrolą
+     prędkości i kierunku kręcenia się silników / kółek
+   * Sensory: wykrywacz linii w podwoziu, i "oczy", czyli czujnik odległości
+   * "Mózg", czyli Arduino
+
+2. Mentor pracuje razem z dziećmi na głównym pliku projektu 
+   ([el-kids-arduino-workshops.ino](el-kids-arduino-workshops.ino))
+
+   Są tam ćwiczenia, w których sukcesywnie pojawiają się coraz trudniejsze
+   zadania do zaprogramowania ("jedź robotem", "jedź i wykrywaj linię", "jedź, 
+   wykrywaj linię i zatrzymaj się przed ścianą" itd.)
+   
+   Przy każdym kolejnym ćwiczeniu pojawiają się też dodatkowe polecenia i
+   struktury (`na_linii()`, `jeżeli` itd.)
+
+3. Program piszemy po polsku.
+   
+4. Gotowe rozwiązania ćwiczeń są do podejrzenia w pliku
+   [solutions.h](solutions.h).
+
+5. Mentor tłumaczy najpierw ogólnie główne elementy programu (co to jest
    procedura, jak robot wykonuje swój kod, do czego jest specjalna procedura
    `powtarzaj` itp.)
 
-4. Mentor przy każdym ćwiczeniu tłumaczy jakie polecenia są teraz dostępne i 
+6. Mentor przy każdym ćwiczeniu tłumaczy jakie polecenia są teraz dostępne i 
    pyta, jak je można wykorzystać, by pomóc robotowi wykonać zadanie.
 
-5. Przy każdym kolejnym ćwiczeniu, mentor implementuje razem z dziećmi kolejną
+7. Przy każdym kolejnym ćwiczeniu, mentor implementuje razem z dziećmi kolejną
    procedurę (`do_mety()`, `taniec()` itd.) - tam, gdzie jest zdefiniowana.
    
    Następnie wywołuje tę procedurę wewnątrz głównej pętli
    (np. `procedura powtarzaj() { do_mety(); }`), wgrywa program do robota i 
    uruchamia go.
 
-6. W głównej pętli używamy jak najwyższego poziomu (`na_linii()`), ale możemy 
+8. W głównej pętli używamy jak najwyższego poziomu (`na_linii()`), ale możemy 
    na koniec pokazać szczegóły implementacyjne
    (`zczytaj_detektor_linii() == WLACZONY`)
 
