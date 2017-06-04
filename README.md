@@ -81,21 +81,21 @@ opartych o Arduino.
    * Gotowe rozwiązania ćwiczeń są do podejrzenia w pliku
      [solutions.h](solutions.h).
 
-5. Mentor tłumaczy najpierw ogólnie główne elementy programu (co to jest
+3. Mentor tłumaczy najpierw ogólnie główne elementy programu (co to jest
    procedura, jak robot wykonuje swój kod, do czego jest specjalna procedura
    `powtarzaj` itp.)
 
-6. Mentor przy każdym ćwiczeniu tłumaczy jakie polecenia są teraz dostępne i 
+4. Mentor przy każdym ćwiczeniu tłumaczy jakie polecenia są teraz dostępne i 
    pyta, jak je można wykorzystać, by pomóc robotowi wykonać zadanie.
 
-7. Przy każdym kolejnym ćwiczeniu, mentor implementuje razem z dziećmi kolejną
+5. Przy każdym kolejnym ćwiczeniu, mentor implementuje razem z dziećmi kolejną
    procedurę (`do_mety()`, `taniec()` itd.) - tam, gdzie jest zdefiniowana.
    
    Następnie wywołuje tę procedurę wewnątrz głównej pętli
    (np. `procedura powtarzaj() { do_mety(); }`), wgrywa program do robota i 
    uruchamia go.
 
-8. W głównej pętli używamy jak najwyższego poziomu (`na_linii()`), ale możemy 
+6. W głównej pętli używamy jak najwyższego poziomu (`na_linii()`), ale możemy 
    na koniec pokazać szczegóły implementacyjne
    (`zczytaj_detektor_linii() == WLACZONY`)
 
