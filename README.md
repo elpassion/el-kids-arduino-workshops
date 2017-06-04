@@ -3,6 +3,8 @@
 Ćwiczenie programistyczno-robotyczne dla dzieci z wykorzystaniem robotów 
 opartych o Arduino.
 
+![EL Kids](extras/el_kids.jpg)
+
 ## Założenia
 
 * Cele:

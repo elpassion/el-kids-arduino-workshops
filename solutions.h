@@ -13,7 +13,7 @@ procedura powtarzaj() {
 procedura do_mety() {
   jedz_do_przodu(3000);
   zatrzymaj_sie();
-  poczekaj(5000);
+  czekaj(5000);
 }
 
 ////////////////////////////////////////////////////////////////////////////////

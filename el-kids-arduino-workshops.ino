@@ -24,7 +24,7 @@ procedura powtarzaj() {
 //    Polecenia które mogą się przydać:
 //      - jedz_do_przodu(milisekundy)
 //      - zatrzymaj_sie()
-//      - poczekaj(milisekundy)
+//      - czekaj(milisekundy)
 
 procedura do_mety() { // Pamiętaj o wywołaniu w "powtarzaj"
   
@@ -47,7 +47,7 @@ procedura do_mety() { // Pamiętaj o wywołaniu w "powtarzaj"
 //      - obroc_w_lewo(milisekundy)
 //      - obroc_w_prawo(milisekundy)
 //      - zatrzymaj_sie()
-//      - poczekaj(milisekundy)
+//      - czekaj(milisekundy)
 
 procedura taniec() { // Pamiętaj o wywołaniu w "powtarzaj"
   
