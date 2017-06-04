@@ -1,7 +1,7 @@
 # EL Kids / ArduBerek
 
 Ćwiczenie programistyczno-robotyczne dla dzieci z wykorzystaniem robotów 
-opartych o Arduino.
+opartych o [Arduino](https://www.arduino.cc).
 
 ![EL Kids](extras/el_kids.jpg)
 
@@ -35,6 +35,8 @@ opartych o Arduino.
   
   * Wszystkie roboty mają to samo zadanie (czyli teamy mogą robić to samo, 
     niezależnie czy będą 3 teamy czy 1)  
+
+![EL Robot](extras/robot.jpg)
 
 ## Ustawienie środowiska
 
