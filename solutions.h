@@ -28,7 +28,7 @@ procedura taniec() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// 4. Czy robot coś widzi? 
+// 4. Czy robot coś widzi?
 
 procedura do_mety_i_stop() {
   jezeli (na_linii()) {
@@ -40,7 +40,7 @@ procedura do_mety_i_stop() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// 5. Czy robot ma więcej zmysłów? 
+// 5. Czy robot ma więcej zmysłów?
 
 procedura dojedz_do_sciany() {
   jezeli (odleglosc() < 5) {
