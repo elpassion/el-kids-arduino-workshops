@@ -9,10 +9,16 @@ opartych o Arduino.
 
   * Pokazanie dzieciom jak wygląda *prawdziwe* programowanie. Czyli na możliwie
     jak najniższym poziomie, gdzie polecenia wpisuje się już ręcznie w IDE,
-    a nie "wyklikuje" algorytm jak np. w Scratchu.
+    a nie "wyklikuje" jak np. w Scratchu.
   
   * Pokazanie dzieciom, że działanie robotów i zabawek typu "Furby" to nie jest 
     magia - tylko działanie określonych sensorów i algorytmów.
+    
+  * Umożliwienie dzieciom dalszej zabawy na własną (rodziców...) rękę:
+    zestaw do złożenia robota najtańszy jaki się da, korzystanie z domyślnych,
+    dobrze znanych narzędzi (Arduino IDE) itp.
+
+  * Zajaranie dzieci na hakowanie :)
   
 * Forma:
 
@@ -59,19 +65,21 @@ opartych o Arduino.
    * "Mózg", czyli Arduino
 
 2. Mentor pracuje razem z dziećmi na głównym pliku projektu 
-   ([el-kids-arduino-workshops.ino](el-kids-arduino-workshops.ino))
+   ([el-kids-arduino-workshops.ino](el-kids-arduino-workshops.ino)).
 
    Są tam ćwiczenia, w których sukcesywnie pojawiają się coraz trudniejsze
    zadania do zaprogramowania ("jedź robotem", "jedź i wykrywaj linię", "jedź, 
    wykrywaj linię i zatrzymaj się przed ścianą" itd.)
    
    Przy każdym kolejnym ćwiczeniu pojawiają się też dodatkowe polecenia i
-   struktury (`na_linii()`, `jeżeli` itd.)
+   struktury (`na_linii()`, `czekaj()`, `jeżeli` itd.)
 
-3. Program piszemy po polsku.
+   * Program piszemy po polsku. Polskie wersje poleceń można podejrzeć
+     w repozytorium [Babelduino](https://github.com/elpassion/Babelduino):
+     [pl.yml](https://github.com/elpassion/Babelduino/blob/master/extras/mappings/pl.yml)
    
-4. Gotowe rozwiązania ćwiczeń są do podejrzenia w pliku
-   [solutions.h](solutions.h).
+   * Gotowe rozwiązania ćwiczeń są do podejrzenia w pliku
+     [solutions.h](solutions.h).
 
 5. Mentor tłumaczy najpierw ogólnie główne elementy programu (co to jest
    procedura, jak robot wykonuje swój kod, do czego jest specjalna procedura
