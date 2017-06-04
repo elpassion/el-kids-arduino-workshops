@@ -61,11 +61,11 @@ procedura berek() {
     obroc_w_lewo(500);
   }
   w_przeciwnym_razie {
-    jezeli (odleglosc() < 50) {
-      jedz_do_przodu(100);
+    jezeli (odleglosc() < 30) {
+      jedz_do_przodu(500);
     }
     w_przeciwnym_razie {
-      obroc_w_prawo(100);
+      obroc_w_prawo(200);
     }
   }
 }

@@ -7,6 +7,7 @@
 //    Wszystkie polecenia są powtarzane w kółko w pętli "powtarzaj".
 
 procedura powtarzaj() {
+
 }
 
 
