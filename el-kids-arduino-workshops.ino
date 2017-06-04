@@ -72,7 +72,7 @@ procedura taniec() { // Pamiętaj o wywołaniu w "powtarzaj"
 //      - jedz_do_przodu(milisekundy)
 //      - na_linii()
 //      - zatrzymaj_sie()
-//        oraz instrukcje 'jezeli' i 'w_przeciwnym_razie'
+//        oraz instrukcje "jezeli" i "w_przeciwnym_razie"
 
 procedura do_mety_i_stop() { // Pamiętaj o wywołaniu w "powtarzaj"
   
