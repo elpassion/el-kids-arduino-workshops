@@ -2,9 +2,11 @@
 
 // Poruszanie się
 
-// 1. Jak robot wykonuje swój kod (pętla powtarzaj)
+////////////////////////////////////////////////////////////////////////////////
+// 1. Jak robot wykonuje swój kod.
+//    Wszystkie polecenia są powtarzane w kółko w pętli "powtarzaj".
 
-procedura powtarzaj(){
+procedura powtarzaj() {
 
 }
 
@@ -13,13 +15,19 @@ procedura powtarzaj(){
 
 
 
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
 // 2. Spróbujmy pomóc robotowi dojechać do mety.
-//    Funkcje które mogą się przydać:go
+//
+//    Polecenia które mogą się przydać:
 //      - jedz_do_przodu(milisekundy)
 //      - zatrzymaj_sie()
-//      - poczekaj(milisekundy)
+//      - czekaj(milisekundy)
 
-procedura do_mety() { //pamiętaj o wywołaniu w "powtarzaj"
+procedura do_mety() { // Pamiętaj o wywołaniu w "powtarzaj"
   
 }
 
@@ -29,15 +37,20 @@ procedura do_mety() { //pamiętaj o wywołaniu w "powtarzaj"
 
 
 
-// 3. Czy roboty mogą tańczyć? Spróbujmy zapropogramować robota tak aby to zrobił!
-//    Funkcje które mogą się przydać:
-//      - jedz_do_przodu(milisekundy)
-//      - obrot_w_lewo(milisekundy)
-//      - obrot_w_prawo(milisekundy)
-//      - zatrzymaj_sie()
-//      - poczekaj(milisekundy)
 
-procedura taniec(){ //pamiętaj o wywołaniu w "powtarzaj"
+
+
+////////////////////////////////////////////////////////////////////////////////
+// 3. Czy roboty mogą tańczyć? Zapropogramujmy naszego robota tak, by to zrobił!
+//
+//    Polecenia które mogą się przydać:
+//      - jedz_do_przodu(milisekundy)
+//      - obroc_w_lewo(milisekundy)
+//      - obroc_w_prawo(milisekundy)
+//      - zatrzymaj_sie()
+//      - czekaj(milisekundy)
+
+procedura taniec() { // Pamiętaj o wywołaniu w "powtarzaj"
   
 }
 
@@ -47,18 +60,22 @@ procedura taniec(){ //pamiętaj o wywołaniu w "powtarzaj"
 
 
 
+
+
+
+////////////////////////////////////////////////////////////////////////////////
 // 4. Czy robot coś widzi? 
 //
-//    /test czujnikow przy pomocy kartonikow/
+//    / Test czujników przy pomocy kartoników /
 //
-//    Spróbujmy zaproprogramować robota tak, aby po dojechaniu do mety -zatrzymał się
-//    Funkcje które mogą się przydać:
+//    Zaproprogramujmy robota tak, aby po dojechaniu do mety - zatrzymał się.
+//    Polecenia które mogą się przydać:
 //      - jedz_do_przodu(milisekundy)
-//      - na_linii 
-//        oraz instrukcja 'jezeli' i 'w_przeciwnym_razie'
+//      - na_linii()
 //      - zatrzymaj_sie()
+//        oraz instrukcje "jezeli" i "w_przeciwnym_razie"
 
-procedura do_mety_i_stop(){ //pamiętaj o wywołaniu w "powtarzaj"
+procedura do_mety_i_stop() { // Pamiętaj o wywołaniu w "powtarzaj"
   
 }
 
@@ -68,19 +85,23 @@ procedura do_mety_i_stop(){ //pamiętaj o wywołaniu w "powtarzaj"
 
 
 
+
+
+
+////////////////////////////////////////////////////////////////////////////////
 // 5. Czy robot ma więcej zmysłów? 
 //
-//    /informacja jak dziala czujnik ultradzwiekowy/
+//    / Jak działa czujnik ultradźwiękowy? /
 //
-//    Spróbujmy zatrzymać robota przed ścianą
-//    Funkcje które mogą się przydać:
+//    Spróbujmy zatrzymać robota zanim wjedzie na ścianę.
+//    Polecenia które mogą się przydać:
 //      - jedz_do_przodu(milisekundy)
-//      - odleglosc 
-//        oraz instrukcja 'jezeli' i 'w_przeciwnym_razie'
-//        oraz operatory < > 
+//      - odleglosc()
 //      - zatrzymaj_sie()
+//        oraz instrukcje "jezeli" i "w_przeciwnym_razie"
+//        oraz znaki mniejszości i większości: < >
 
-procedura dojedz_do_sciany(){ //pamiętaj o wywołaniu w "powtarzaj"
+procedura dojedz_do_sciany() { // Pamiętaj o wywołaniu w "powtarzaj"
     
 }
 
@@ -91,10 +112,23 @@ procedura dojedz_do_sciany(){ //pamiętaj o wywołaniu w "powtarzaj"
 
 
 
+
+
+////////////////////////////////////////////////////////////////////////////////
 // 6. Czy robot może bawić się z innymi robotami?
 //
-// /przedstawienie pomysłu/
+//    / Przedstawienie pomysłu /
 
-procedura berek(){ //pamiętaj o wywołaniu w "powtarzaj"
+procedura berek() { // Pamiętaj o wywołaniu w "powtarzaj"
 
 }
+
+
+
+
+
+
+
+
+
+
