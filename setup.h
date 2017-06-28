@@ -39,20 +39,20 @@ procedura zatrzymaj_sie() {
   wheels.full_stop(200);
 }
 
-procedura jedz_do_przodu(int time) {
-  wheels.forward(DEFAULT_SPEED, time);
+procedura jedz_do_przodu(liczba milisekundy) {
+  wheels.forward(DEFAULT_SPEED, milisekundy);
 }
 
-procedura jedz_do_tylu(int time) {
-  wheels.backward(DEFAULT_SPEED, time);
+procedura jedz_do_tylu(liczba milisekundy) {
+  wheels.backward(DEFAULT_SPEED, milisekundy);
 }
 
-procedura obroc_w_lewo(int time) {
-  wheels.turn_left(DEFAULT_SPEED, time); 
+procedura obroc_w_lewo(liczba milisekundy) {
+  wheels.turn_left(DEFAULT_SPEED, milisekundy); 
 }
 
-procedura obroc_w_prawo(int time) {
-  wheels.turn_right(DEFAULT_SPEED, time); 
+procedura obroc_w_prawo(liczba milisekundy) {
+  wheels.turn_right(DEFAULT_SPEED, milisekundy); 
 }
 
 podaj czy na_linii() {
